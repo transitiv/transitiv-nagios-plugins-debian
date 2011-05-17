@@ -1,0 +1,15 @@
+Source: transitiv-nagios-plugins
+Section: net
+Priority: extra
+Maintainer: Adam James <adam.james@transitiv.co.uk>
+Build-Depends: debhelper (>= 7.0.50~), autotools-dev, libwww-perl, libnagios-plugin-perl, libnet-snmp-perl
+Standards-Version: 3.8.4
+Homepage: http://www.transitiv.co.uk/resources-page/nagios-plugins
+
+Package: transitiv-nagios-plugins
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, ucf, libwww-perl, libnagios-plugin-perl, libnet-snmp-perl
+Recommends: nagios3 | icinga, pnp4nagios
+Description: A collection of useful Nagios/Icinga plugins
+ A collection of useful plugins for Nagios/Icinga, including command
+ definitions, tests, and PNP4Nagios graph templates.
