@@ -1,0 +1,9 @@
+define command {
+        command_name	check_snmp_mem_simple
+        command_line	@PLUGINDIR@/check_snmp_mem_simple.pl -H '$HOSTADDRESS$' -C '$ARG1$' -w '$ARG2$' -c '$ARG3$'
+}
+
+define command {
+        command_name	check_snmp_mem_simple_2
+        command_line	@PLUGINDIR@/check_snmp_mem_simple.pl -H '$HOSTADDRESS$' -C '$ARG1$' -2 -w '$ARG2$' -c '$ARG3$'
+}
